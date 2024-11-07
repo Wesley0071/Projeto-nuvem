@@ -1,0 +1,17 @@
+<!-- delivery/templates/delivery/create_order.html -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Faça seu Pedido</title>
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
